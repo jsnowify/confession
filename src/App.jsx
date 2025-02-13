@@ -21,7 +21,7 @@ function App() {
     confettiInterval.current = setInterval(() => {
       jsConfetti.current.addConfetti({
         emojis: ["🧡", "💙", "🩵", "🤍"],
-        emojiSize: 50,
+        emojiSize: 30,
         confettiNumber: 100,
       });
     }, 2000);
@@ -39,7 +39,7 @@ function App() {
       setShowCard(true);
       startConfettiLoop();
 
-      const correctAudio = new Audio("/public/song.mp3");
+      const correctAudio = new Audio("/song.mp3");
       correctAudio.loop = true;
       correctAudio.play();
     } else {
